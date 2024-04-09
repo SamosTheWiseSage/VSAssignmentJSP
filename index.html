@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 
     <!-- Länkar till JavaScript-filen -->
-    <script src="js/script.js"></script>
+    <script src="./js/script.js" defer></script>
    
     <title>FVS</title>
 </head>
-<body>
+<body bgcolor="black">
+   <form class="formClass" id="formID">
+    <p id="rulesMessage">please write your name in the box below and click submit to begin the game</p>
+    <input type="text" id="nameForum" required>
+    <button id="submitName" style="font-size: 20px;">Submit</button> 
    
-</body>
+   </form> 
+   <img src="https://64.media.tumblr.com/1458225a6051e572f34b931011630d71/tumblr_ol1es3Lg4a1tevcm3o1_500.gifv" alt="" class="formImage">
+   <div class="DivClass" id="formID2">
+    <h1>Welcome to the game</h1>
+    <p>The Rules: Your goal is to gain a 100 treasure. 
+        treasure is your saved Total points. 
+        To gain Total points you click the throw dice 
+        button but beware if you roll a 1 you lose all your Totalpoints and you must press Retry. 
+        <br>
+    Finally to save your Total Points you click the Freeze Dice button and
+     then your Total points are added to your treasure.</p>
+    <p id="resultMessage"></p>
+    <p id="rounds"></p>
+    <p id="treasure"></p>
+    <button id="ThrowDice">ThrowDice!</button>
+    <button id="freezeDice">freezeDice</button> 
+    <button id="Retry">Retry</button> 
+    <p id="DiceNumber"></p>
+    <p id="DiceResult"></p> 
+   <div class="ImageClass">
+       <p >FAILURE ALL POINTS  EARNED THIS ROUND ARE REDUCED TO ZERO.</p>
+    <img src="https://media1.tenor.com/m/l150KwZFyOYAAAAC/roll-dice-roll.gif" alt="">
+   </div>
+ 
+   </div>
+  </body>
 </html>
